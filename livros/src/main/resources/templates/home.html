@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+<div th:each ="livro :${lista}">
+    <h1 th:text = "${livro.nome}">Titulo</h1>
+    <h2 th:text = "${livro.autor}">Autor</h2>
+    <img th:src = "${livro.imagem}" alt="imagem">
+</div>
+</body>
+</html>
