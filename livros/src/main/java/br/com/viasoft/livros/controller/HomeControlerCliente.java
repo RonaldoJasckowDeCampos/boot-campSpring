@@ -15,7 +15,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class HomeControlerCliente {
     @Autowired
     private ClienteRepository clienteRepository;
-    @GetMapping("/Cliente")
+    @GetMapping("/cliente")
     public String getCliente(Model model){
         List<Cliente> clienteList =  clienteRepository.findAll();
         model.addAttribute("listaCliente",clienteList);
